@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- <link rel="stylesheet" href="css/baguetteBox.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.css">
+    <title>Interactive Photo Gallery</title>
+</head>
+<body>
+    <main>
+      <form action="index.html" method="post">
+         <!-- <label for="search">Search</label>  -->
+         <input type="search" id="search" name="search" placeholder="Search" class="search" onkeyup="search_gallery()">
+         <!-- <button type="submit">Search</button> -->
+      </form>
+      <div class="gallery">  
+        <a href="photo_gallery_v5/photos/01.jpg" class="photos" title="Hay Bales" data-caption="I love hay bales. 
+        Took this snap on a drive through the countryside past some straw fields."> 
+            <img src="photo_gallery_v5/photos/thumbnails/01.jpg" alt="Image 1">
+        </a>
+
+        <a href="photo_gallery_v5/photos/02.jpg" class="photos" title="Lake" data-caption="The lake was so calm today. 
+        We had a great view of the snow on the mountains from here."> 
+            <img src="photo_gallery_v5/photos/thumbnails/02.jpg" alt="Image 2">
+        </a>
+
+        <a href="photo_gallery_v5/photos/03.jpg" class="photos" title="Canyon" data-caption="I hiked to the top of the 
+        mountain and got this picture of the canyon and trees below."> 
+            <img src="photo_gallery_v5/photos/thumbnails/03.jpg" alt="Image 3">
+        </a> 
+
+        <a href="photo_gallery_v5/photos/04.jpg" class="photos" title="Iceberg" data-caption="It was amazing to see an 
+        iceberg up close, it was so cold but didn’t snow today. "> 
+        <img src="photo_gallery_v5/photos/thumbnails/04.jpg" alt="Image 4">
+        </a>
+
+        <a href="photo_gallery_v5/photos/05.jpg" class="photos" title="Desert" data-caption="The red cliffs were beautiful. 
+        It was really hot in the desert but we did a lot of walking through the canyons."> 
+        <img src="photo_gallery_v5/photos/thumbnails/05.jpg" alt="Image 5"> 
+        </a>
+
+        <a href="photo_gallery_v5/photos/06.jpg" class="photos" title="Fall" data-caption="Fall is coming, 
+        I love when the leaves on the trees start to change color."> 
+        <img src="photo_gallery_v5/photos/thumbnails/06.jpg" alt="Image 6">
+        </a>
+       
+        <a href="photo_gallery_v5/photos/07.jpg" class="photos" title="Plantation" data-caption="I drove past this plantation 
+        yesterday, everything is so green!"> 
+        <img src="photo_gallery_v5/photos/thumbnails/07.jpg" alt="Image 7"> 
+        </a>
+
+        <a href="photo_gallery_v5/photos/08.jpg" class="photos" title="Dunes" data-caption="My summer vacation 
+        to the Oregon Coast. I love the sandy dunes!"> 
+        <img src="photo_gallery_v5/photos/thumbnails/08.jpg" alt="Image 8">
+        </a>
+
+        <a href="photo_gallery_v5/photos/09.jpg" class="photos" title="Countryside Lane" data-caption="We enjoyed a quiet stroll 
+        down this countryside lane. "> 
+        <img src="photo_gallery_v5/photos/thumbnails/09.jpg" alt="Image 9">
+        </a>
+
+        <a href="photo_gallery_v5/photos/10.jpg" class="photos" title="Sunset" data-caption="Sunset at the coast! 
+        The sky turned a lovely shade of orange.">
+        <img src="photo_gallery_v5/photos/thumbnails/10.jpg" alt="Image 10">
+        </a>
+
+        <a href="photo_gallery_v5/photos/11.jpg" class="photos" title="Cave" data-caption="I did a tour of a cave today 
+        and the view of the landscape below was breathtaking."> 
+        <img src="photo_gallery_v5/photos/thumbnails/11.jpg" alt="Image 11"> 
+        </a>
+
+        <a href="photo_gallery_v5/photos/12.jpg" class="photos" title="Bluebells" data-caption="I walked through this meadow of bluebells 
+        and got a good view of the snow on the mountain before the fog came in.">
+        <img src="photo_gallery_v5/photos/thumbnails/12.jpg" alt="Image 12">
+        </a>
+      </div>  
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.js" async></script>
+    <script src="js/app.js" async></script>
+    <script>
+        window.addEventListener('load', function() {
+          baguetteBox.run('.gallery');
+        });
+    </script>
+</body>
+</html>
