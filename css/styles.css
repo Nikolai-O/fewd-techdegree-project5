@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.search {
+    display: block;
+    margin: 20px auto;
+    height: 50px;
+    width: 400px;
+    border-radius: 7px;
+    border: 2px lightgrey solid;
+    padding-left: 10px;
+    font-size: 1.25em;
+}
+
+.search::placeholder {
+    color: grey;
+    font-size: 1.25rem;
+    padding-left: 10px;
+}
+
+.gallery {
+    max-width: 800px;
+    margin: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    grid-template-rows: 1fr;
+    grid-gap: 25px 20px;
+}
